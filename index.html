@@ -1000,7 +1000,6 @@ maintenance using the BingoPlus system</p>
           <button class="overlay-btn">View Details</button>
           <a href="https://preview.duda.co/preview/087daac8?t=1781748032312&device=desktop" class="overlay-btn ghost" target="_blank">Open Preview ↗</a>
         </div>
-        <span class="card-badge">Featured</span>
       </div>
       <div class="card-body">
         <p class="card-tag">Ecommerce</p>
@@ -1207,7 +1206,7 @@ const projectData = [
     tools: ["Duda", "UI/UX", "Responsive Design"],
     year: "2026",
     duration: "Live Preview",
-    role: "Web Designer"
+    role: "Developer/Designer"
   },
   {
     category: "E-commerce",
@@ -1219,7 +1218,7 @@ const projectData = [
     tools: ["Duda", "UI/UX", "Responsive Design"],
     year: "2026",
     duration: "Live Preview",
-    role: "Web Designer"
+    role: "Developer/Designer"
   },
   {
     category: "Web Design",
@@ -1312,8 +1311,9 @@ function openModal(index) {
   `;
 
   const actions = document.getElementById('modalActions');
-  actions.innerHTML = `<a href="${p.figmaLink}" target="_blank" class="btn-primary">Open in Figma ↗</a>`;
-  if (p.liveLink) actions.innerHTML += `<a href="${p.liveLink}" target="_blank" class="btn-ghost">View Live Site ↗</a>`;
+  actions.innerHTML = '';
+  if (p.figmaLink) actions.innerHTML = `<a href="${p.figmaLink}" target="_blank" class="btn-primary">Open in Figma ↗</a>`;
+  if (p.liveLink) actions.innerHTML += `<a href="${p.liveLink}" target="_blank" class="btn-primary">View Live Site ↗</a>`;
 
   overlay.classList.remove('text-only');
   overlay.classList.add('open');
