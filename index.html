@@ -966,10 +966,34 @@ maintenance using the BingoPlus system</p>
     <div class="projects-grid" id="projectsGrid">
 
     <!-- ==========================================
-         PROJECT CARD 1 - Coolbreeze
+         PROJECT CARD 1 - Aurum Fest 2026
          🔧 EDIT all data-* attributes and content
          ========================================== -->
-    <div class="project-card" data-category="web" onclick="openModal(0)">
+    <div class="project-card" data-category="Duda" onclick="openModal(0)">
+      <div class="card-image">
+        <img src="pics/aurum.jpg" alt="Aurum Fest 2026">
+        <div class="card-overlay">
+          <button class="overlay-btn">View Details</button>
+          <a href="https://janric123456.responsivewebsitebuilder.io/preview/a8445a7c?t=1782680186210&device=all" class="overlay-btn ghost" target="_blank">Open Preview ↗</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-tag">Website</p>
+        <h3 class="card-title">Aurum Fest 2026</h3>
+        <p class="card-desc">Designed and developed Aurum Fest 2026, a concept luxury music festival website.</p>
+        <div class="card-footer">
+          <div class="card-tools">
+            <span class="tool-chip">Duda</span>
+            <span class="tool-chip">Responsive</span>
+            <span class="tool-chip">UI/UX</span>
+          </div>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT CARD 2 - Coolbreeze -->
+    <div class="project-card" data-category="web" onclick="openModal(1)">
       <div class="card-image">
         <img src="pics/coolbreeze.jpg" alt="Coolbreeze aircon shop preview">
         <div class="card-overlay">
@@ -984,6 +1008,7 @@ maintenance using the BingoPlus system</p>
         <div class="card-footer">
           <div class="card-tools">
             <span class="tool-chip">Duda</span>
+            <span class="tool-chip">Duda Native</span>
             <span class="tool-chip">UI/UX</span>
             <span class="tool-chip">Responsive Design</span>
           </div>
@@ -992,8 +1017,8 @@ maintenance using the BingoPlus system</p>
       </div>
     </div>
 
-    <!-- PROJECT CARD 2 - Curveball -->
-    <div class="project-card" data-category="Duda" onclick="openModal(1)">
+    <!-- PROJECT CARD 3 - Curveball -->
+    <div class="project-card" data-category="Duda" onclick="openModal(2)">
       <div class="card-image">
         <img src="pics/curveball.jpg" alt="Project screenshot">
         <div class="card-overlay">
@@ -1009,6 +1034,7 @@ maintenance using the BingoPlus system</p>
         <div class="card-footer">
           <div class="card-tools">
             <span class="tool-chip">Duda</span>
+            <span class="tool-chip">Duda Native</span>
             <span class="tool-chip">UI/UX</span>
             <span class="tool-chip">Responsive Design</span>
           </div>
@@ -1017,8 +1043,8 @@ maintenance using the BingoPlus system</p>
       </div>
     </div>
 
-    <!-- PROJECT CARD 3 - EduTrack -->
-    <div class="project-card" data-category="figma" onclick="openModal(2)">
+    <!-- PROJECT CARD 4 - EduTrack -->
+    <div class="project-card" data-category="figma" onclick="openModal(3)">
       <div class="card-image">
         <img src="pics/1.jpg" alt="Project screenshot">
         <div class="card-overlay">
@@ -1040,8 +1066,8 @@ maintenance using the BingoPlus system</p>
       </div>
     </div>
 
-    <!-- PROJECT CARD 4 - Travel And Tours -->
-    <div class="project-card" data-category="figma" onclick="openModal(3)">
+    <!-- PROJECT CARD 5 - Travel And Tours -->
+    <div class="project-card" data-category="figma" onclick="openModal(4)">
       <div class="card-image">
         <video src="pics/wipgif.mp4" autoplay muted loop style="width:100%; height:100%; object-fit:cover;"></video>
         <div class="card-overlay">
@@ -1197,6 +1223,18 @@ maintenance using the BingoPlus system</p>
 // ================================================================
 const projectData = [
   {
+    category: "Website, Duda",
+    title: "Aurum Fest 2026",
+    description: "Designed and developed Aurum Fest 2026, a concept luxury music festival website as part of my web design portfolio. Built on the Duda platform, the project demonstrates my ability to create visually polished, content-rich single-page sites — including custom HTML/CSS/JS widgets for countdown timers, artist lineup displays, schedule tabs, and an interactive venue map. The site targets a premium Filipino audience with an OPM-focused lineup and BGC as the venue.",
+    image: "pics/aurum.jpg",
+    figmaLink: "",
+    liveLink: "https://janric123456.responsivewebsitebuilder.io/preview/a8445a7c?t=1782730261872&device=desktop",
+    tools: ["Duda", "Duda Native","Responsive", "UI/UX"],
+    year: "2026",
+    duration: "3 days",
+    role: "Developer/Designer"
+  },
+  {
     category: "E-commerce, Website, Duda",
     title: "Coolbreeze",
     description: "Coolbreeze is a service shop for air conditioning and maintenance, built to showcase products, service packages, and customer support offerings.",
@@ -1205,19 +1243,19 @@ const projectData = [
     liveLink: "https://2tstapales.responsivewebsitebuilder.io/preview/6b592797?t=1781742955142&device=desktop",
     tools: ["Duda", "UI/UX", "Responsive Design"],
     year: "2026",
-    duration: "Live Preview",
+    duration: "1 week",
     role: "Developer/Designer"
   },
   {
-    category: "E-commerce",
+    category: "E-commerce, Website, Duda",
     title: "Curveball",
     description: "Curveball is a premium paddleshop specializing in paddles, rackets, and exclusive accessories for paddling enthusiasts. Built using Duda's drag-and-drop platform, the site features a sleek, modern storefront design with organized product categories, detailed product showcases, and a seamless shopping experience. The design prioritizes visual hierarchy with high-quality product imagery and intuitive navigation to encourage customer engagement and conversions. Every element—from product cards to the call-to-action buttons—is crafted to reflect the brand's premium positioning in the sports gear market.",
     image: "pics/curveball.jpg",
     figmaLink: "",
     liveLink: "https://preview.duda.co/preview/087daac8?t=1781748032312&device=desktop",
-    tools: ["Duda", "UI/UX", "Responsive Design"],
+    tools: ["Duda Native","Duda","UI/UX", "Responsive Design"],
     year: "2026",
-    duration: "Live Preview",
+    duration: "1 week",
     role: "Developer/Designer"
   },
   {
