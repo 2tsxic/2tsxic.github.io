@@ -966,10 +966,36 @@ maintenance using the BingoPlus system</p>
     <div class="projects-grid" id="projectsGrid">
 
     <!-- ==========================================
-         PROJECT CARD 1 - Aurum Fest 2026
+         PROJECT CARD 1 - Cafino
          🔧 EDIT all data-* attributes and content
          ========================================== -->
     <div class="project-card" data-category="Duda" onclick="openModal(0)">
+      <div class="card-image">
+        <img src="pics/cafino.jpg" alt="Cafino project preview">
+        <div class="card-overlay">
+          <button class="overlay-btn">View Details</button>
+          <a href="https://jmigeeel.responsivewebsitebuilder.io/preview/bafa818f?t=1783467028044&device=all" class="overlay-btn ghost" target="_blank">Open Preview ↗</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-tag">Website</p>
+        <h3 class="card-title">Cafino</h3>
+        <p class="card-desc">Built a fully responsive coffee shop website with a modern user interface focused on user experience and accessibility. Implemented structured content sections, engaging visuals, mobile optimization, and easy navigation to effectively present the café's menu, services, and business information while maintaining a consistent experience across desktop, tablet, and mobile devices.</p>
+        <div class="card-footer">
+          <div class="card-tools">
+            <span class="tool-chip">Duda</span>
+            <span class="tool-chip">Responsive</span>
+            <span class="tool-chip">UI/UX</span>
+            <span class="tool-chip">No HTML Widget</span>
+            <span class="tool-chip">Customized Widget</span>
+          </div>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT CARD 2 - Aurum Fest 2026 -->
+    <div class="project-card" data-category="Duda" onclick="openModal(1)">
       <div class="card-image">
         <img src="pics/aurum.jpg" alt="Aurum Fest 2026">
         <div class="card-overlay">
@@ -984,16 +1010,18 @@ maintenance using the BingoPlus system</p>
         <div class="card-footer">
           <div class="card-tools">
             <span class="tool-chip">Duda</span>
+            <span class="tool-chip">Duda Native</span>
             <span class="tool-chip">Responsive</span>
             <span class="tool-chip">UI/UX</span>
+            <span class="tool-chip">No HTML Widget</span>
           </div>
           <div class="card-arrow">→</div>
         </div>
       </div>
     </div>
 
-    <!-- PROJECT CARD 2 - Coolbreeze -->
-    <div class="project-card" data-category="web" onclick="openModal(1)">
+    <!-- PROJECT CARD 3 - Coolbreeze -->
+    <div class="project-card" data-category="web" onclick="openModal(2)">
       <div class="card-image">
         <img src="pics/coolbreeze.jpg" alt="Coolbreeze aircon shop preview">
         <div class="card-overlay">
@@ -1011,14 +1039,15 @@ maintenance using the BingoPlus system</p>
             <span class="tool-chip">Duda Native</span>
             <span class="tool-chip">UI/UX</span>
             <span class="tool-chip">Responsive Design</span>
+            <span class="tool-chip">No HTML Widget</span>
           </div>
           <div class="card-arrow">→</div>
         </div>
       </div>
     </div>
 
-    <!-- PROJECT CARD 3 - Curveball -->
-    <div class="project-card" data-category="Duda" onclick="openModal(2)">
+    <!-- PROJECT CARD 4 - Curveball -->
+    <div class="project-card" data-category="Duda" onclick="openModal(3)">
       <div class="card-image">
         <img src="pics/curveball.jpg" alt="Project screenshot">
         <div class="card-overlay">
@@ -1037,14 +1066,15 @@ maintenance using the BingoPlus system</p>
             <span class="tool-chip">Duda Native</span>
             <span class="tool-chip">UI/UX</span>
             <span class="tool-chip">Responsive Design</span>
+            <span class="tool-chip">No HTML Widget</span>
           </div>
           <div class="card-arrow">→</div>
         </div>
       </div>
     </div>
 
-    <!-- PROJECT CARD 4 - EduTrack -->
-    <div class="project-card" data-category="figma" onclick="openModal(3)">
+    <!-- PROJECT CARD 5 - EduTrack -->
+    <div class="project-card" data-category="figma" onclick="openModal(4)">
       <div class="card-image">
         <img src="pics/1.jpg" alt="Project screenshot">
         <div class="card-overlay">
@@ -1066,8 +1096,8 @@ maintenance using the BingoPlus system</p>
       </div>
     </div>
 
-    <!-- PROJECT CARD 5 - Curveball (Figma) -->
-    <div class="project-card" data-category="figma" onclick="openModal(4)">
+    <!-- PROJECT CARD 6 - Curveball (Figma) -->
+    <div class="project-card" data-category="figma" onclick="openModal(5)">
       <div class="card-image">
         <img src="pics/curveballfigma.jpg" alt="Curveball Figma project preview">
         <div class="card-overlay">
@@ -1089,8 +1119,8 @@ maintenance using the BingoPlus system</p>
       </div>
     </div>
 
-    <!-- PROJECT CARD 6 - Travel And Tours -->
-    <div class="project-card" data-category="figma" onclick="openModal(5)">
+    <!-- PROJECT CARD 7 - Travel And Tours -->
+    <div class="project-card" data-category="figma" onclick="openModal(6)">
       <div class="card-image">
         <video src="pics/wipgif.mp4" autoplay muted loop style="width:100%; height:100%; object-fit:cover;"></video>
         <div class="card-overlay">
@@ -1245,6 +1275,18 @@ maintenance using the BingoPlus system</p>
 // Each object maps to one card. Order matters — matches card order.
 // ================================================================
 const projectData = [
+  {
+    category: "Website, Duda",
+    title: "Cafino",
+    description: "Built a fully responsive coffee shop website with a modern user interface focused on user experience and accessibility. Implemented structured content sections, engaging visuals, mobile optimization, and easy navigation to effectively present the café's menu, services, and business information while maintaining a consistent experience across desktop, tablet, and mobile devices.",
+    image: "pics/cafino.jpg",
+    figmaLink: "",
+    liveLink: "https://jmigeeel.responsivewebsitebuilder.io/preview/bafa818f?t=1783467028044&device=all",
+    tools: ["Duda", "Responsive", "UI/UX"],
+    year: "2026",
+    duration: "3 days",
+    role: "Developer/Designer"
+  },
   {
     category: "Website, Duda",
     title: "Aurum Fest 2026",
