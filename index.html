@@ -123,37 +123,9 @@
     padding: 40px 48px;
     position: relative; overflow: hidden;
     gap: 40px;
-    background:
-      radial-gradient(circle at 20% 12%, rgba(98, 180, 176, 0.24), transparent 24%),
-      radial-gradient(circle at 78% 18%, rgba(255, 209, 102, 0.18), transparent 22%),
-      linear-gradient(130deg, #060707 0%, #0e1216 45%, #11171d 100%);
-    isolation: isolate;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 20%, transparent 45%, rgba(98,180,176,0.12) 70%, transparent 100%);
-    background-size: 220% 100%;
-    mix-blend-mode: screen;
-    opacity: 0.45;
-    animation: glitchSweep 6s linear infinite;
-    pointer-events: none;
-  }
-  .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 35%, rgba(98,180,176,0.04) 100%);
-    opacity: 0.4;
-    pointer-events: none;
   }
   .hero-bg {
     position: absolute; inset: 0; pointer-events: none;
-    background: linear-gradient(120deg, transparent 0%, rgba(98,180,176,0.06) 35%, transparent 70%, rgba(255,209,102,0.06) 100%);
-    background-size: 220% 220%;
-    animation: glitchShift 8s ease-in-out infinite alternate;
-    opacity: 0.7;
   }
   .hero-blob {
     position: absolute;
@@ -176,18 +148,6 @@
   @keyframes float {
     0%, 100% { transform: translateY(0) scale(1); }
     50% { transform: translateY(-30px) scale(1.05); }
-  }
-  @keyframes glitchSweep {
-    0% { transform: translateX(-40%); }
-    100% { transform: translateX(40%); }
-  }
-  @keyframes glitchShift {
-    0% { background-position: 0% 0%; }
-    100% { background-position: 100% 100%; }
-  }
-  @keyframes scanlines {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(12px); }
   }
   .hero-content {
     position: relative;
